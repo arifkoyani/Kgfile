@@ -80,22 +80,12 @@ import ImageSvgConverter from "@/components/ImageSvg/page";
   ];
 
   return (
-    <div className=" h-screen md:h-screen [perspective:1000px] relative flex flex-col max-w-5xl mx-auto w-full  items-center justify-center">
+    <div className=" h-screen text-xs md:h-screen [perspective:1000px] relative flex flex-col max-w-5xl mx-auto w-full  items-center justify-center">
       <Tabs tabs={tabs} />
     </div>
   );
 }
 
-const DummyContent = () => {
-  return (
-    <Image
-      src="/linear.webp"
-      alt="dummy image"
-      width="1000"
-      height="1000"
-      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
-    />
-  );
-};
+
 
 export default ImageConverter

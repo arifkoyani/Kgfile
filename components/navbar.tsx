@@ -71,6 +71,13 @@ export default function Navbar({ }): any {
                                     </Link>
                                 </SheetTrigger>
                                 <SheetTrigger asChild>
+                                    <Link href="/imageconverter">
+                                        <Button variant="link" className="w-full font-semibold text-md">
+                                        Converter Image
+                                        </Button>
+                                    </Link>
+                                </SheetTrigger>
+                                <SheetTrigger asChild>
                                     <Link href="/privacy-policy">
                                         <Button variant="link" className="w-full font-semibold text-md">
                                             Privacy Policy

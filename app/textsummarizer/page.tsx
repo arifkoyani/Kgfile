@@ -18,10 +18,7 @@ export default function TextSummarizer() {
       <div className="max-w-3xl w-full py-4 bg-[#f3f4f6] rounded-lg shadow-lg p-8 space-y-6">
         {/* Heading */}
         <h1 className="text-3xl font-bold text-center text-gray-900">
-          Text Summarizer <br/>
-          <span className="text-xs">
-          Powered By chatgpt4+
-          </span>
+          Text Summarizer
         </h1>
         <p className="text-center text-gray-600">
           Paste your text below, and we'll summarize it for you.

@@ -6,6 +6,7 @@ import { AuroraBackground } from "./../components/aurora-background";
 import Dropzone from "@/components/dropzone";
 import ImageToPngConverter from "@/components/ImgToPng/page";
 import TextSummarizer from "./textsummarizer/page";
+import { BackgroundLinx } from "@/components/welcomelines/page";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
         }}
         className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
-        {/* <div className="space-y-1 pb-0 bg-slate-100"> */}
+        <div className="space-y-1 pb-0 bg-slate-100">
           {/* Title + Desc */}
           {/* <div className="space-y-0">
             <h1 className="text-3xl md:text-5xl font-medium text-center">
@@ -38,7 +39,7 @@ export default function Home() {
           <TextSummarizer/>
           {/* <Dropzone /> */}
           {/* <ImageToPngConverter/> */}
-        {/* </div> */}
+        </div>
       </motion.div>
     </AuroraBackground>
   );
