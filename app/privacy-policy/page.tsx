@@ -1,6 +1,7 @@
+"use client"
 export default function PrivacyPolicy() {
     return (
-        <div className="space-y-12 text-md md:text-lg text-muted-foreground pb-4 md:pb-8">
+        <div className="bg-transparent space-y-12 text-md md:text-lg text-muted-foreground pb-4 md:pb-8">
             <p>Effective Date: Wed 6 Sep 2023</p>
             <p>
                 At Modifio, we are committed to safeguarding your privacy. This Privacy Policy outlines our practices

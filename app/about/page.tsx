@@ -1,3 +1,4 @@
+"use client"
 export default function About() {
   return (
       <div className="space-y-12 text-md md:text-lg text-muted-foreground pb-4 md:pb-8">
