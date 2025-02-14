@@ -16,12 +16,12 @@ import { MdDone } from "react-icons/md";
 import { Badge } from "@/components/ui/badge";
 import { HiOutlineDownload } from "react-icons/hi";
 import { BiError } from "react-icons/bi";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import loadFfmpeg from "@/utils/load-ffmpeg";
 import type { Action } from "@/types";
 import { FFmpeg } from "@ffmpeg/ffmpeg";
 
-export default function ImageSvgConverter() {
+export default function ImageTifConverter() {
   const { toast } = useToast();
   const [is_hover, setIsHover] = useState<boolean>(false);
   const [actions, setActions] = useState<Action[]>([]);
@@ -108,7 +108,7 @@ export default function ImageSvgConverter() {
         file_name: file.name,
         file_size: file.size,
         from: file.name.slice(((file.name.lastIndexOf(".") - 1) >>> 0) + 2),
-        to: "svg", // Hardcoded to convert to SVG
+        to: "tif",
         file_type: file.type,
         file,
         is_converted: false,
@@ -192,12 +192,12 @@ export default function ImageSvgConverter() {
             ) : (
               <div className="text-muted-foreground text-md flex items-center gap-4">
                 <span>Convert to</span>
-                <span className="font-medium">SVG</span>
+                <span className="font-medium">TIF</span>
               </div>
             )}
 
             {action.is_converted ? (
-              <Button variant="outline" onClick={() => download(action)}>
+              <Button variant="outline" className="text-black mx-2" onClick={() => download(action)}>
                 Download
               </Button>
             ) : (
@@ -225,7 +225,7 @@ export default function ImageSvgConverter() {
                 size="lg"
                 onClick={reset}
                 variant="outline"
-                className="rounded-xl"
+                className="rounded-xl text-black mx-2"
               >
                 Convert Another File(s)
               </Button>

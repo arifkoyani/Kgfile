@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   unlimited and free multimedia conversion. Transform images, audio, and
   videos effortlessly, without restrictions. Start converting now and
   elevate your content like never before!`,
-  creator: "SOUHAIL BEN-LHACHEMI",
+  creator: "Arif-koyani",
   keywords:
     "image converter, video converter, audio converter, unlimited image converter, unlimited video converter",
 };
@@ -32,19 +32,21 @@ export default function RootLayout({
         content="V8lmEvFOdYBlChgR6pYABBZBhI1EFnPb1YuxTTdHXMU"
       />
       <body className={inter.className}>
-        <ThemeProvider
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           themes={["light", "dark"]}
-        >
-          <Navbar />
+        > */}
+       <Navbar />
            <BackgroundLinx/>
-          <Toaster />
-          <div className="pt-10 min-h-screen lg:pt-28 2xl:pt-40 container max-w-4xl lg:max-w-6xl 2xl:max-w-7xl">
-            {children}
-          </div>
-        </ThemeProvider>
+          <Toaster /> 
+        <div
+        // className="pt-10 min-h-screen lg:pt-28 2xl:pt-40 container max-w-4xl lg:max-w-6xl 2xl:max-w-7xl"
+        >
+          {children}
+        </div>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );

@@ -4,11 +4,13 @@ import { motion } from "framer-motion";
 import React from "react";
 import { AuroraBackground } from "./../components/aurora-background";
 import Dropzone from "@/components/dropzone";
-import ImageToPngConverter from "@/components/ImgToPng/page";
+import ImageToPngConverter from "@/components/ImageConversion/ImgToPng/page";
 import TextSummarizer from "./textsummarizer/page";
 import { BackgroundLinx } from "@/components/welcomelines/page";
 
+
 export default function Home() {
+  // {children}:{children:React.ReactNode}
   return (
     <AuroraBackground>
       <motion.div
@@ -19,11 +21,10 @@ export default function Home() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4"
+     className="h-screen"
       >
-        <div className="space-y-1 pb-0 bg-slate-100">
-          {/* Title + Desc */}
-          {/* <div className="space-y-0">
+      {/* Title + Desc */}
+      {/* <div className="space-y-0">
             <h1 className="text-3xl md:text-5xl font-medium text-center">
               Free Unlimited File Converter
             </h1>
@@ -35,12 +36,14 @@ export default function Home() {
             </p>
           </div> */}
 
-          {/* Upload Box */}
-          <TextSummarizer/>
-          {/* <Dropzone /> */}
-          {/* <ImageToPngConverter/> */}
-        </div>
-      </motion.div>
-    </AuroraBackground>
+
+      {/* {children} */}
+      {/* Upload Box */}
+    <TextSummarizer/> 
+      {/* <Dropzone /> */}
+      {/* <ImageToPngConverter/> */}
+
+       </motion.div>
+  </AuroraBackground>
   );
 }

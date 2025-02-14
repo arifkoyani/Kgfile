@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import { Tabs } from "../../components/tabs";
-import ImageToPngConverter from "@/components/ImgToPng/page";
-import ImageToJpgConverter from "@/components/ImageToJpg/page";
-import ImageToJpegConverter from "@/components/ImageToJpeg/page";
-import ImageToGifConverter from "@/components/ImageToGif/page";
-import ImageToWebpConverter from "@/components/ImageToWebp/page";
-import ImageTifConverter from "@/components/ImageTif/page";
-import ImageSvgConverter from "@/components/ImageSvg/page";
+import ImageToPngConverter from "@/components/ImageConversion/ImgToPng/page";
+import ImageToJpgConverter from "@/components/ImageConversion/ImageToJpg/page";
+import ImageToJpegConverter from "@/components/ImageConversion/ImageToJpeg/page";
+import ImageToGifConverter from "@/components/ImageConversion/ImageToGif/page";
+import ImageToWebpConverter from "@/components/ImageConversion/ImageToWebp/page";
+import ImageTifConverter from "@/components/ImageConversion/ImageTif/page";
+import ImageSvgConverter from "@/components/ImageConversion/ImageSvg/page";
 
  function ImageConverter() {
   const tabs = [
